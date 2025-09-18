@@ -1,4 +1,4 @@
-cd ~/Downloads
+cd ~/Documents
 rm -rf testlogger
 git clone https://github.com/albertoaguilar8/testlogger.git
 cd testlogger
